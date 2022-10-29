@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+/* mudar a cor de fundo */
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #0093e9;
+    background: linear-gradient(160deg, #223440 0%, #0F17C3 100%);
+}
+/* Centralizando com flexbox */
+body, main, main footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+/* Estilizando o main(fundo) */
+main {
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+}
+/* Alinhando os botoes */
+main footer {
+    flex-direction: row;
+}
+/* Estilizando os botoes */
+main footer button {
+    color: #000;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid rgba(197, 224, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    color: rgba(255, 255, 255, 0.8);
+}
+main footer button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
